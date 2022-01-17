@@ -39,9 +39,6 @@ function PairOfBarriers(height, aberture, x) {
     this.setX(x)
 }
 
-// const b = new PairOfBarriers(650, 200, 400)
-// document.querySelector('[wm-flappy]').appendChild(b.element)
-
 function Barriers(height, width, gap, distance, notifyPoint) {
     this.pares = [
         new PairOfBarriers(height, gap, width),
