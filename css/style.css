@@ -2,9 +2,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --body-font: 'Montserrat', 'sans-serif';
+    --body-bg: #eee;
+}
+
+.dark-mode:root {
+    --body-font: 'Montserrat', 'sans-serif';
+    --body-bg: #031318;
+}
+
 body {
+    font-family: var(--body-font);
     margin: 0;
-    background-color: #031318;
+    background-color: var(--body-bg);
     color: #fff;
     height: 100%;
 }
@@ -17,7 +28,6 @@ body {
 }
 
 h1 {
-    font-family: monospace, sans-serif;
     font-size: 30px;
     color: deepskyblue;
 }
@@ -27,7 +37,6 @@ h1 {
     right: 5px;
     bottom: 5px;
     font-size: 10px;
-    font-family: Verdana, sans-serif;
     font-weight: 600;
     color: #000;
     z-index: 2;

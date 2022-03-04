@@ -7,13 +7,23 @@
     src: url(fonts/Pixel.ttf);
 }
 
+:root {
+    --border-color: #000;
+    --bg-flappy: deepskyblue;
+}
+
+.dark-mode:root {
+    --border-color: dodgerblue;
+    --bg-flappy: linear-gradient(to top, #ffd900, #ffa500, #e69e19, #ad7202);
+}
+
 [wm-flappy] {
     position: relative;
-    border: 5px solid dodgerblue;
+    border: 5px solid var(--border-color);
     height: 650px;
     width: 1200px;
     margin: 15px;
-    background-color: deepskyblue;
+    background: var(--bg-flappy);
     overflow: hidden;
 }
 
@@ -21,7 +31,6 @@
     position: absolute;
     width: 60px;
     left: calc(50% - 30px);
-    bottom: 50%;
 }
 
 .par-de-barreiras {
@@ -60,4 +69,5 @@
     right: 10px;
     font-family: Pixel;
     font-size: 50px;
+    z-index: 100;
 }
